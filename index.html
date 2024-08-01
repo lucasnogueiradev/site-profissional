@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Otimize atendimento é um bot de atendimento para WhatsApp, fornecendo respostas rápidas e personalizada para seus clientes."
+    />
+    <meta
+      name="keywords"
+      content="bot de atendimento, atendimento ao cliente, suporte técnico, integração de API, automação, WhatsApp"
+    />
+    <meta name="author" content="Otimize Atendimento" />
+    <meta name="robots" content="index, follow" />
+
+    <meta name="title" content="Bot de atendimento" />
+    <meta
+      name="description"
+      content="Otimize atendimento é um bot de atendimento para WhatsApp, fornecendo respostas rápidas e personalizada para seus clientes."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/" />
+    <meta property="og:title" content="Bot de atendimento" />
+    <meta
+      property="og:description"
+      content="Otimize atendimento é um bot de atendimento para WhatsApp, fornecendo respostas rápidas e personalizada para seus clientes."
+    />
+    <meta property="og:image" content="img/banner.webp" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="/" />
+    <meta property="twitter:title" content="Bot de atendimento" />
+    <meta
+      property="twitter:description"
+      content="Otimize atendimento é um bot de atendimento para WhatsApp, fornecendo respostas rápidas e personalizada para seus clientes."
+    />
+    <meta property="twitter:image" content="img/banner.webp" />
+
+    <title>Bot de atendimento</title>
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml" />
+
+    <!-- Preload para fontes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="css/styles.css" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;700&family=Poppins:wght@400;500;600;900&family=Roboto:wght@400;500&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;700&family=Poppins:wght@400;500;600;900&family=Roboto:wght@400;500&display=swap"
+    /></noscript>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script
+      src="https://use.fontawesome.com/releases/v6.5.2/js/all.js"
+      defer
+    ></script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5G4SBT86");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- Logo -->
+      <div class="logo">
+        <a class="logo-content" href="/">
+          <img
+            aria-hidden="true"
+            data-src="img/logo.svg"
+            width="30"
+            height="30"
+            alt="logo"
+            class="lazy-load"
+            aria-hidden="true"
+          />
+          <span>Otimize</span>
+        </a>
+      </div>
+      <!-- Nav -->
+      <nav class="nav" aria-label="Menu de navegaçao">
+        <ul class="nav-itens" role="menu">
+          <li role="menuitem">
+            <a href="#questions" class="nav-item">Sobre</a>
+          </li>
+          <li role="menuitem">
+            <a href="#cards" class="nav-item">Benefícios</a>
+          </li>
+          <li role="menuitem"><a href="#plans" class="nav-item">Planos</a></li>
+          <li role="menuitem">
+            <a href="#contact" class="nav-item">Contato</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="register">
+        <ul class="register-itens">
+          <li>
+            <a href="https://gerador-de-link.netlify.app/" class="register-item"
+              >Login</a
+            >
+          </li>
+          <li>
+            <a href="https://gerador-de-link.netlify.app/" class="register-item"
+              >Teste grátis</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <button
+        class="btn-mobile"
+        id="btn"
+        aria-expanded="false"
+        aria-label="Abrir menu"
+        aria-haspopup="true"
+        aria-controls="menu"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </header>
+
+    <main>
+      <!-- Banner -->
+      <section class="banner">
+        <div class="banner-content">
+          <article class="banner-text">
+            <h1 class="banner-title">Bot de atendimento para WhatsApp</h1>
+            <p class="banner-description">
+              Descubra como um bot de atendimento pode aumentar suas vendas no
+              WhatsApp, forneça respostas rápidas e personalizada para seus
+              clientes.
+            </p>
+            <div class="banner-btn">
+              <a
+                href="https://wa.me/13991301814?text=Iniciar%20agora"
+                class="btn-info"
+                >Iniciar agora</a
+              >
+              <a
+                href="https://wa.me/13991301814?text=Falar%20com%20suporte"
+                class="btn-info"
+                >Falar com suporte</a
+              >
+            </div>
+          </article>
+          <aside class="banner-image">
+            <img
+              aria-hidden="true"
+              data-src="./img/banner.webp"
+              alt="banner"
+              class="banner-img lazy-load"
+            />
+          </aside>
+        </div>
+      </section>
+
+      <!-- Cards -->
+      <section class="cards" id="cards">
+        <h2 class="cards-title">Benefícios</h2>
+        <div class="card-content">
+          <article class="card">
+            <figure class="card-image">
+              <img
+                aria-hidden="true"
+                data-src="img/chatbot.webp"
+                alt="plano 1"
+                class="card-img lazy-load"
+              />
+            </figure>
+
+            <footer class="card-text">
+              <h2 class="card-title">Atendimento ao Cliente 24/7</h2>
+              <p class="card-description">
+                O bot pode responder automaticamente às consultas dos clientes a
+                qualquer hora, melhorando a experiência do cliente e reduzindo o
+                tempo de espera.
+              </p>
+            </footer>
+          </article>
+
+          <article class="card">
+            <figure class="card-image">
+              <img
+                aria-hidden="true"
+                data-src="img/chatbot.webp"
+                alt="plano 2"
+                class="card-img lazy-load"
+              />
+            </figure>
+
+            <footer class="card-text">
+              <h2 class="card-title">Suporte Técnico</h2>
+              <p class="card-description">
+                Oferecer assistência técnica automatizada para solucionar
+                problemas comuns dos clientes, fornecer orientações passo a
+                passo ou direcionar para recursos úteis.
+              </p>
+            </footer>
+          </article>
+
+          <article class="card">
+            <figure class="card-image">
+              <img
+                aria-hidden="true"
+                data-src="img/chatbot.webp"
+                alt="plano 3"
+                class="card-img lazy-load"
+              />
+            </figure>
+
+            <footer class="card-text">
+              <h2 class="card-title">Integração de API</h2>
+              <p class="card-description">
+                Conectar-se a sistemas de CRM, plataformas de e-commerce ou
+                outras ferramentas empresariais por meio de APIs para acessar
+                informações de clientes, oferecendo assim um atendimento mais
+                personalizado e eficiente.
+              </p>
+            </footer>
+          </article>
+        </div>
+      </section>
+
+      <!-- Plan -->
+      <section class="plans" id="plans">
+        <h3 class="plans-title">Valores de outro planeta</h3>
+        <p class="plans-description">
+          Nossos preços cabem no seu orçamento, até os mais modestos.
+        </p>
+        <div class="plan-content">
+          <article class="plan">
+            <header>
+              <h4 class="plan-title">Plano Light</h4>
+              <p class="plan-description">
+                Comece com automação acessível no WhatsApp.
+              </p>
+              <ul class="plan-itens">
+                <li><span class="check">✔</span>Atendimento ilimitado</li>
+                <li><span class="check">✔</span>Incluso botões e lista</li>
+                <li><span class="check">✔</span>Suporte e edição do bot</li>
+                <li><span class="check">✔</span>Disparos automáticos</li>
+              </ul>
+            </header>
+
+            <footer class="plan-prices">
+              <span class="plan-price">R$ 79<sub>/Mês</sub></span>
+              <a
+                href="https://wa.me/13991301814?text=Ol%C3%A1,%20gostaria%20de%20contratar%20o%20*Plano%20Light*%20de%20R$%2079."
+                class="plan-btn"
+                >Contratar</a
+              >
+            </footer>
+          </article>
+
+          <article class="plan">
+            <header>
+              <span class="plan-premium">Mais popular</span>
+              <h4 class="plan-title">Plano Premium</h4>
+              <p class="plan-description">
+                Avance com recursos avançados personalizados.
+              </p>
+              <ul class="plan-itens">
+                <li><span class="check">✔</span> Atendimento ilimitado</li>
+                <li><span class="check">✔</span> Incluso botões e lista</li>
+                <li><span class="check">✔</span> Suporte e edição do bot</li>
+                <li><span class="check">✔</span> Disparos automáticos</li>
+              </ul>
+            </header>
+
+            <footer class="plan-prices">
+              <span class="plan-price">R$ 110<sub>/Mês</sub></span>
+              <a
+                href="https://wa.me/13991301814?text=Ol%C3%A1,%20gostaria%20de%20contratar%20o%20*Plano%20Premium*%20de%20R$%20110."
+                class="plan-btn"
+                >Contratar</a
+              >
+            </footer>
+          </article>
+
+          <article class="plan">
+            <header>
+              <h4 class="plan-title">Plano Empresarial</h4>
+              <p class="plan-description">
+                Avance com recursos avançados personalizados.
+              </p>
+              <ul class="plan-itens">
+                <li><span class="check">✔</span> Atendimento ilimitado</li>
+                <li><span class="check">✔</span> Incluso botões e lista</li>
+                <li><span class="check">✔</span> Suporte e edição do bot</li>
+                <li><span class="check">✔</span> Disparos automáticos</li>
+                <li><span class="check">✔</span> Bot completo de vendas</li>
+                <li><span class="check">✔</span> Envio de qualquer mídia</li>
+                <li>
+                  <span class="check">✔</span> Incluso consultar API externar
+                </li>
+                <li><span class="check">✔</span> Rercurso de IA</li>
+              </ul>
+            </header>
+            <footer class="plan-prices">
+              <span class="plan-price">R$ 149<sub>/Mês</sub></span>
+              <a
+                href="https://wa.me/13991301814?text=Ol%C3%A1,%20gostaria%20de%20contratar%20o%20*Plano%20Empresarial*%20de%20R$%20149."
+                class="plan-btn"
+                >Contratar</a
+              >
+            </footer>
+          </article>
+        </div>
+
+        <figure class="arrow">
+          <button
+            class="btn-arrow prev"
+            aria-label="
+            Navegar para o plano anterior
+          "
+          >
+            <i class="fa-solid fa-chevron-left bx"></i>
+          </button>
+          <button
+            class="btn-arrow next"
+            aria-label="
+             Navegar para o próximo plano"
+          >
+            <i class="fa-solid fa-chevron-right bx"></i>
+          </button>
+        </figure>
+      </section>
+
+      <!-- Questions -->
+      <section class="questions" id="questions">
+        <div class="question-content">
+          <article class="questions-title">
+            <h3 class="question-title">Perguntas frequentes</h3>
+            <p class="question-description">Tire suas dúvidas</p>
+          </article>
+
+          <div class="questions-text">
+            <details class="question-text">
+              <summary class="question">
+                O que é um bot de atendimento do WhatsApp?
+              </summary>
+              <p class="question-answers">
+                Um bot de atendimento do WhatsApp é um programa de computador
+                projetado para interagir com usuários automaticamente através do
+                WhatsApp. Ele pode ser usado para responder a perguntas comuns,
+                fornecer informações, realizar transações e muito mais, tudo de
+                forma automatizada.
+              </p>
+            </details>
+
+            <details class="question-text">
+              <summary class="question">
+                Como um bot de atendimento do WhatsApp funciona?
+              </summary>
+              <p class="question-answers">
+                Um bot de atendimento do WhatsApp é um programa de computador
+                projetado para interagir com usuários automaticamente através do
+                WhatsApp. Ele pode ser usado para responder a perguntas comuns,
+                fornecer informações, realizar transações e muito mais, tudo de
+                forma automatizada.
+              </p>
+            </details>
+
+            <details class="question-text">
+              <summary class="question">
+                Quais são os benefícios de usar um bot de atendimento do
+                WhatsApp?
+              </summary>
+              <p class="question-answers">
+                Os benefícios de usar um bot de atendimento do WhatsApp incluem:
+              </p>
+              <ol class="question-list">
+                <li>
+                  Atendimento automático e instantâneo 24 horas por dia, 7 dias
+                  por semana.
+                </li>
+                <li>
+                  Economia de tempo e recursos, pois reduz a necessidade de
+                  atendimento manual.
+                </li>
+                <li>
+                  Melhora na experiência do cliente, fornecendo respostas
+                  rápidas e precisas.
+                </li>
+                <li>
+                  Possibilidade de realizar transações, agendar compromissos e
+                  muito mais de forma automatizada.
+                </li>
+              </ol>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact" id="contact">
+        <h3 class="contact-title">Solicitar orçamento</h3>
+        <div class="contact-content">
+          <form
+            action="https://formsubmit.co/zeroonzeinformatica@gmail.com"
+            class="contact-form"
+            method="POST"
+          >
+            <input
+              type="text"
+              placeholder="Digite seu nome"
+              name="name"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Digite seu e-mail"
+              name="email"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Digite seu mensagem"
+              required
+            ></textarea>
+            <input type="hidden" name="_next" value="/" />
+
+            <button
+              type="submit"
+              class="contact-btn"
+              aria-label="Envio de formulário"
+            >
+              Enviar
+            </button>
+          </form>
+
+          <aside class="contact-image">
+            <img
+              aria-hidden="true"
+              data-src="./img/orcamento.webp"
+              class="contact-img lazy-load"
+              alt="contato"
+            />
+          </aside>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <section class="footer-content">
+        <div class="footer-itens">
+          <article class="footer-item">
+            <h3>Recursos</h3>
+            <ul>
+              <li>Atendimento ilimitado</li>
+              <li>Multi-atendimento</li>
+              <li>Disparos automáticos</li>
+              <li>Recursos úteis</li>
+            </ul>
+          </article>
+
+          <article class="footer-item">
+            <h3>Integrações</h3>
+            <ul>
+              <li>WhatsApp</li>
+              <li>Facebook Messenger</li>
+              <li>Instagram</li>
+              <li>Telegram</li>
+            </ul>
+          </article>
+
+          <article class="footer-item">
+            <h3>Links</h3>
+            <ul>
+              <li>otimizeatendimento@com.br</li>
+              <li>13 99130-1814</li>
+              <li>Sao Paulo - SP</li>
+            </ul>
+          </article>
+
+          <article class="footer-item">
+            <h3>Legal</h3>
+            <ul>
+              <li>Politica de Privacidade</li>
+              <li><a href="termo-de-uso.html">Termo de Uso</a></li>
+            </ul>
+          </article>
+        </div>
+
+        <article class="footer-social">
+          <h4 class="footer-title">contato</h4>
+          <a href="/" class="footer-logo">
+            <img
+              aria-hidden="true"
+              data-src="img/logo.svg"
+              alt="logo"
+              height="30"
+              width="30"
+              class="lazy-load"
+            />
+            <span> OTIMIZE </span>
+            <p>Atendimento</p>
+          </a>
+          <ul class="footer-icons">
+            <li class="icons-list">
+              <a
+                href="https://www.instagram.com/luuccasnogueira"
+                class="icons-links"
+                aria-label="instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/luuccasnogueira"
+                class="icons-links"
+                aria-label="facebook"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://wa.me/13991301814?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20como%20funciona?"
+                class="icons-links"
+                aria-label="whatsapp"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a
+                href="https://www.telegram.com/luuccasnogueira"
+                class="icons-links"
+                aria-label="telegram"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </footer>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5G4SBT86"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
